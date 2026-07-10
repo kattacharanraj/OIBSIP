@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: lightcoral;
+    border: 3px solid black;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+}
+
+.image-section {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: lightgray;
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.intro-section {
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.intro-section h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.6;
+}
+
+.powers-section {
+    background-color: lightyellow;
+    border: 3px solid black;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.powers-section h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.powers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.power-card {
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.power-card h3 {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.power-card p {
+    font-size: 0.95em;
+    color: black;
+    line-height: 1.5;
+}
+
+.why-admire {
+    background-color: lightcyan;
+    border: 3px solid black;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.why-admire h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.point-item {
+    background-color: white;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.point-item h3 {
+    font-size: 1.15em;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.point-item p {
+    font-size: 0.95em;
+    color: black;
+    line-height: 1.5;
+}
+
+.legacy-section {
+    background-color: lightgreen;
+    border: 3px solid black;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.legacy-section h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.legacy-section p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1.1em;
+    color: black;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .intro-section h2,
+    .powers-section h2,
+    .why-admire h2,
+    .legacy-section h2 {
+        font-size: 1.5em;
+    }
+
+    .powers-grid,
+    .points {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header,
+    .intro-section,
+    .powers-section,
+    .why-admire,
+    .legacy-section,
+    .footer {
+        padding: 15px;
+    }
+}
