@@ -103,7 +103,15 @@ function calculateResult() {
             result = prev * current;
             break;
         case '/':
-            result = current !== 0 ? prev / current : 0;
+            if (current === 0) {
+                currentInput = 'Error';
+                operation = null;
+                shouldResetDisplay = true;
+                displayText = 'Error';
+                updateDisplay();
+                return;
+            }
+            result = prev / current;
             break;
         default:
             return;
