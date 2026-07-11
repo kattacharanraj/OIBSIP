@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* ---------- layout ---------- */
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ---------- navbar ---------- */
+.navbar {
+    background-color: lightcoral;
+    border-bottom: 3px solid black;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-user {
+    font-weight: bold;
+}
+
+.logout-btn {
+    background-color: lightyellow;
+    border: 2px solid black;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------- cards ---------- */
+.card {
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.small-card {
+    max-width: 420px;
+    margin: 40px auto;
+}
+
+.banner {
+    background-color: lightyellow;
+    text-align: center;
+}
+
+.banner p {
+    margin: 10px 0 15px;
+}
+
+/* ---------- forms ---------- */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: lightyellow;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+.inline-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.inline-form input, .inline-form select {
+    width: auto;
+    flex: 1;
+    min-width: 120px;
+}
+
+/* ---------- buttons ---------- */
+.btn {
+    border: 2px solid black;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: black;
+    margin-top: 10px;
+}
+
+.btn-green { background-color: lightgreen; }
+.btn-blue { background-color: lightcyan; }
+.btn-red { background-color: lightcoral; }
+.btn.small { padding: 6px 12px; font-size: 0.85em; margin-top: 0; }
+
+/* full width buttons only inside the narrow auth cards */
+.small-card .btn {
+    width: 100%;
+}
+
+/* ---------- messages ---------- */
+.message {
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success { background-color: lightgreen; }
+.error { background-color: lightcoral; }
+
+.link-text {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.link-text a {
+    color: black;
+    font-weight: bold;
+}
+
+.hint {
+    font-style: italic;
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+/* ---------- grid of cards ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.variety-card {
+    text-align: center;
+    background-color: lightyellow;
+}
+
+.variety-emoji {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.stat-card {
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.stat-card h2 {
+    font-size: 2.5em;
+}
+
+/* ---------- pizza builder ---------- */
+.step {
+    background-color: lightcyan;
+}
+
+.options-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+.choice input {
+    width: auto;
+    cursor: pointer;
+}
+
+.total-card {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+/* ---------- checkout ---------- */
+.summary p {
+    margin: 6px 0;
+}
+
+.summary hr {
+    margin: 12px 0;
+    border: 1px solid black;
+}
+
+/* ---------- orders ---------- */
+.order-card {
+    background-color: white;
+}
+
+.order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    margin: 4px 0;
+}
+
+.order-date {
+    font-size: 0.85em;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.badge {
+    border: 2px solid black;
+    padding: 5px 12px;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+.badge-yellow { background-color: lightyellow; }
+.badge-blue { background-color: lightcyan; }
+.badge-green { background-color: lightgreen; }
+.badge-gray { background-color: lightgray; }
+
+/* ---------- admin ---------- */
+.alert-list, .alert-list li {
+    margin-left: 20px;
+    margin-bottom: 6px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: lightyellow;
+}
+
+td input {
+    width: 80px;
+}
+
+.low-row {
+    background-color: lightcoral;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+}
